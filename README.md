@@ -1,8 +1,4 @@
-Personal blog of Habdul Hazeez built with [GatsbyJS](https://gatsbyjs.org) after going
-through the [official GatsbyJS tutorial](https://www.gatsbyjs.org/tutorial/).
+Personal Website of Habdul Hazeez. I teach and write code with interests in Web Development,
+Computer Security, and Artificial Intelligence.
 
-If you are reading this it means **I am still learning GatsbyJS** and applying what I learn.
-The content and structure of this repo will change as I learn more about GatsbyJS. You can read
-more at https://ziizium.github.io/about/.
-
-You can access the blog at https://ziizium.github.io, mind you it's still a work in progress.
+You can find me on [DEV](https://dev.to/ziizium), [Twitter](https://twitter.com/ziizium), [Instagram](https://instagram.com/ziizium), and [Dribbble](https://dribbble.com/ziizium).
