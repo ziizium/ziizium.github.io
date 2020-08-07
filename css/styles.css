@@ -404,6 +404,7 @@ main a:hover {
 	overflow: hidden;
 	max-width: 18.75em;
 	margin: 2em auto;
+	position: relative;
 }
 
 @media screen and (min-width: 48em) {
@@ -413,7 +414,6 @@ main a:hover {
 	}
 
 	.media-card {
-		flex: 1;
 		margin-right: 2em;
 	}
 }
@@ -421,6 +421,7 @@ main a:hover {
 .media-card__image {
 	display: block;
 	width: 100%;
+	position: relative;
 	/**
 	 * Use this if the images are of the same dimension
 	 * (width and height), else leave this as a comment
@@ -428,6 +429,48 @@ main a:hover {
 	 */
 	/*height: auto;*/
 }
+
+/**
+ * Styling broken images
+ */
+/* For Chrome browsers*/
+.media-card__image::before {
+	content: " ";
+	background-color: #eee;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	border: 1px dashed #aaa;
+	border-radius: 4px;
+}
+
+.media-card__image::after {
+	content: attr(alt);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 1px;
+	left: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/**
+ * The method for styling broken images using
+ * pseudo-elements works in both Firefox and Chrome
+ * browser, but the only defect in this approach is
+ * that, in Firefox browser the alt text of the image
+ * still shows alongside the alt text generated using CSS
+ * content property but directly targeting the alt attribute
+ * works in FireFox.
+ */
+ .media-card__image[alt] {
+	text-align: center;
+	font-weight: bold;
+	color: #999;
+ }
+/* End of styling broken images */
 
 .media-card__content {
 	padding: 1rem;
