@@ -463,7 +463,7 @@ main a:hover {
  * that, in Firefox browser the alt text of the image
  * still shows alongside the alt text generated using CSS
  * content property but directly targeting the alt attribute
- * works in FireFox.
+ * works.
  */
  .media-card__image[alt] {
 	text-align: center;
