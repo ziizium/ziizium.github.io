@@ -1,4 +1,4 @@
-Personal Website of Habdul Hazeez. I teach and write code with interests in Web Development,
+Personal website of Habdul Hazeez. I teach and write code with interests in Web Development,
 Computer Security, and Artificial Intelligence (AI).
 
 The current design of the site is based on the project [Alice & Bob](https://github.com/ziizium/aliceandbob).
