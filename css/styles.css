@@ -394,8 +394,12 @@ main a:hover {
     }
 
     .main {
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
+    }
+
+    .main.projects-page {
+    	width: 80%;
     }
 }
 
